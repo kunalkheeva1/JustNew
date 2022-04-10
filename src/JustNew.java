@@ -1,16 +1,16 @@
-public class JustNew {
-    public static void getInt() {
-        int kk = Integer.parseInt("1");
-        System.out.println(kk);
+import java.util.*;
 
-    }
-
+public class JustNew{
     public static void main(String[] args) {
-        try {
-            getInt();
-        } catch (Exception e) {
-            System.out.println("Naw man it aint correct move!");
-        }
+        ArrayList<Integer> kk = new ArrayList<>();
+        for( int i = 1; i<=5; i++)
+            kk.add(i);
+        System.out.println(kk);
+        kk.remove(4);
+
+        System.out.println(kk);
+        for(int i = 0; i<4; i++)
+            System.out.println(kk.get(i));
 
     }
 }
