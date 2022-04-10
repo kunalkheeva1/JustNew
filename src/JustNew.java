@@ -1,16 +1,14 @@
-import java.util.LinkedList;
+import java.util.Scanner;
 
-public class JustNew{
+public class JustNew {
     public static void main(String[] args) {
-        LinkedList<Integer> kk = new LinkedList<>();
-        for(int i = 1; i<=5; i++){
-            kk.add(i);
-        }
-        System.out.println(kk);
-        kk.remove(3);
-        System.out.println(kk);
-        for (int i= 0; i<kk.size(); i++)
-            System.out.println(kk.get(i));
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your first number: ");
+        double kk = scanner.nextDouble();
+        System.out.println("Enter your second number: ");
+        double nn = scanner.nextDouble();
+        double mm = kk +nn;
+        System.out.println("So Your result is: ");
+        System.out.println(mm);
     }
 }
