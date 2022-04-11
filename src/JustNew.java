@@ -3,11 +3,26 @@ import java.util.Scanner;
 public class JustNew {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        if(n%2==0){
-            System.out.println("Even");
-        }else{
-            System.out.println("odd");
-        }
+    int a = sc.nextInt();
+        int operator = sc.nextInt();
+    int b = sc.nextInt();
+
+
+switch (operator){
+    case 1:
+        System.out.println(a+b);
+        break;
+    case 2:
+        System.out.println(a-b);
+        break;
+    case 3:
+        System.out.println(a*b);
+        break;
+    case 4:
+        System.out.println(a/b);
+    default:
+        System.out.println("Invalid");
+}
+
     }
 }
