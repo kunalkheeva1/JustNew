@@ -1,14 +1,25 @@
 import java.util.Scanner;
 
 public class JustNew {
+    static int age;
+    static Scanner sc = new Scanner(System.in);
+
+    static void kk() {
+        System.out.println("Enter your age: ");
+        age = sc.nextInt();
+        if (age < 18) {
+            System.out.println("Your are not adult go fuck yourself");
+        } else if (age >= 18){
+        System.out.println("Hell yea we got it man!");
+    }
+
+}
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your first number: ");
-        double kk = scanner.nextDouble();
-        System.out.println("Enter your second number: ");
-        double nn = scanner.nextDouble();
-        double mm = kk +nn;
-        System.out.println("So Your result is: ");
-        System.out.println(mm);
+        JustNew obj = new JustNew();
+        obj.kk();
+      for(int i = 0; i<age; i++){
+          obj.kk();
+      }
+
     }
 }
