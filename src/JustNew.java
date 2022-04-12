@@ -5,8 +5,5 @@ public class JustNew {
         System.out.println("Hello World");
         i++;
     }while(i<10);
-
-
-
     }
 }
