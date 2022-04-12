@@ -6,5 +6,12 @@ public class JustNew{
         for(int i = 1; i<=5; i++)
             arr.add(i);
         System.out.println(arr);
+        arr.add(1,23);
+        System.out.println(arr);
+        arr.set(1,2);
+        System.out.println(arr);
+        arr.remove(1);
+        System.out.println(arr);
+
     }
 }
