@@ -1,9 +1,18 @@
+import java.util.Scanner;
+
 public class JustNew {
-    public static void main(String[] args) {
-    int i = 0;
-    do{
-        System.out.println("Hello World");
-        i++;
-    }while(i<10);
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        double input= sc.nextDouble();
+        double sum=0;
+        for(int i = 1; i<=100; i++){
+            sum= input+i;
+            System.out.println(sum);
+
+        }
+
+
+
+
     }
 }
