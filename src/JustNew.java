@@ -14,7 +14,9 @@ public class JustNew{
         arr.add(1,"Kheeva");
         System.out.println(arr);
         arr.set(0, "Nav");
+        System.out.println(arr);
+        arr.set(0,"Kunal");
         Collections.sort(arr);
-
+        System.out.println(arr);
     }
 }
