@@ -6,6 +6,7 @@ public class JustNew {
 
     static void factorial(double n) {
         double fact = 1;
+
         for(double i=n; i>=1; i--){
             fact = fact*i;
         }
