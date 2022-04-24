@@ -3,16 +3,19 @@ import org.w3c.dom.ls.LSOutput;
 import java.util.Scanner;
 
 public class JustNew {
-    public static double kunal(double a, double b) {
-        double sum = a + b;
-        return sum;
+
+    static void factorial(double n) {
+        double fact = 1;
+        for(double i=n; i>=1; i--){
+            fact = fact*i;
+        }
+        System.out.println(fact);
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        double a = scanner.nextDouble();
-        double b = scanner.nextDouble();
-        double sum = kunal(a, b);
-        System.out.println(sum);
+        Scanner sc = new Scanner(System.in);
+        double n = sc.nextDouble();
+        factorial(n);
+
     }
 }
