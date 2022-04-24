@@ -1,19 +1,18 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class JustNew {
-    public static double kunal(){
-         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter your first number: ");
-         double a= scanner.nextDouble();
-        System.out.println("Please enter your second number: ");
-         double b = scanner.nextDouble();
-         double sum = a+b;
-        System.out.println("Here you go: ");
-        System.out.println(sum);
-         return sum;
+    public static double kunal(double a, double b) {
+        double sum = a + b;
+        return sum;
     }
-    public static void main(String[] args) {
-        kunal();
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double a = scanner.nextDouble();
+        double b = scanner.nextDouble();
+        double sum = kunal(a, b);
+        System.out.println(sum);
     }
 }
