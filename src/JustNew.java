@@ -6,12 +6,13 @@ public class JustNew {
         System.out.println("Enter your input to be reversed: ");
         StringBuilder kk = new StringBuilder(sc.nextLine());
         for(int i=0; i<kk.length()/2; i++){
-
-            char first= kk.charAt(i);
-            char last= kk.charAt(kk.length()-1-i);
-            kk.setCharAt(i,last);
-            kk.setCharAt(kk.length()-1-i,first);
+            int front= i;
+            int back = kk.length() -1-i;
+            char first= kk.charAt(front);
+            char last= kk.charAt(back);
+            kk.setCharAt(front,last);
+            kk.setCharAt(back,first);
         }
-        System.out.println("Reversed input: "+ "\n"+kk);
+        System.out.println("Reversed input: "+ "\n" +kk);
     }
 }
